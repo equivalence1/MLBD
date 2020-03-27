@@ -2,6 +2,7 @@ import pyspark
 import pyspark.sql.functions as F
 from pyspark.sql.types import *
 from pyspark.mllib.evaluation import BinaryClassificationMetrics
+import numpy as np
 
 
 def rocauc(model, df, probabilities_col='probability'):
